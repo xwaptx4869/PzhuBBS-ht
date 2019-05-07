@@ -1,10 +1,3 @@
-# xuezhiqian-ht
-
-
-### 项目简介
-
-`xuezhiqian-ht` 是为 `薛之谦` 粉丝APP开发的后台管理系统，用户维护、管理粉丝社区。
-
 ### 技术栈
 
 系统前台模块采用 `vue + element-ui`进行开发，使用 `eslint + prettier`进行语法检测，样式预编译采用`scss`。
@@ -64,31 +57,3 @@ code码定义：
 `mock` 数据使用 `mock.js`进行模拟，为使用方便采取第三方数据模拟网站进行数据`mock` [mock地址](https://easy-mock.com/project/5bf22122dfdf50608b922e47)。
 
 ### 路由
-
-```
-数据中心
-    dashboard      /data/dashboard/
-    用户标签统计    /personnel/labels/
-内容管理    
-    新闻管理        /content/news/
-    行程管理        /content/schedulings/
-    帖子管理        /content/posts/
-    评论管理        /content/comments/
-    微博动态        /content/weibo/
-    话题管理        /content/topics/
-    相册管理        /content/photos/
-    Banner管理      /content/banners/
-    官方通知        /content/officialnotices/
-    
-用户中心
-    用户管理        /personnel/users/
-    用户举报审核     
-    勋章管理        /personnel/medals/
-    认证管理        /personnel/certifications/
-    帮助中心        /personnel/helps/
-    投诉建议        /personnel/suggests/
-    APP版本管理     /personnel/versions/
-    敏感词          /personnel/sensitivewords/
-    用户角色管理     /personnel/roles/
-    权限管理        /personnel/permissions/
-```
