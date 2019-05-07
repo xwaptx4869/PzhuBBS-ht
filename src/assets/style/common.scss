@@ -1,0 +1,261 @@
+@import './assets/style/theme.scss';
+
+body {
+	background-color: #f0f2f4;
+	.el-form {
+		width: 880px;
+	}
+	.smart-widget-section .el-form {
+		width: auto;
+	}
+}
+.el-menu-item {
+	height: 45px !important;
+	line-height: 45px !important;
+}
+.el-popper {
+	z-index: 10002 !important;
+}
+.sidebar {
+	.el-submenu {
+		position: relative;
+		.el-submenu__title {
+			background-color: transparent !important;
+			cursor: pointer;
+			position: relative;
+			i.fa {
+				color: #8dacc4 !important;
+				margin-right: 30px;
+			}
+			&::after {
+				content: '';
+				position: absolute;
+				display: block;
+				width: 1px;
+				top: 0;
+				left: 48px;
+				height: 41px;
+				z-index: -1;
+				font-size: 10px;
+				background-color: #17232c;
+			}
+		}
+		.el-menu-item:focus,
+		.el-menu-item:hover,
+		.el-submenu__title:focus,
+		.el-submenu__title:hover {
+			outline: 0 !important;
+			color: #fff !important;
+			background-color: #17232c !important;
+			font-weight: 400;
+			i.fa {
+				color: #fff !important;
+			}
+		}
+		&::after {
+			position: absolute;
+			top: 0;
+			right: 237px;
+			height: 56px;
+			left: 0;
+			content: '';
+			transition: right 0.4s ease;
+		}
+		&:nth-child(1)::after {
+			background-color: $theme-color;
+		}
+		&:nth-child(2)::after {
+			background-color: #e36159;
+		}
+		&:nth-child(3)::after {
+			background-color: #7266ba;
+		}
+	}
+	.is-opened {
+		.el-submenu__title {
+			color: #fff !important;
+			background-color: #17232c !important;
+			i.fa {
+				color: #fff !important;
+			}
+		}
+		&::after {
+			right: 185px !important;
+		}
+	}
+}
+.tabs-list {
+	padding: 20px;
+}
+.avatar-uploader .el-upload {
+	border: 1px dashed #d9d9d9;
+	border-radius: 6px;
+	cursor: pointer;
+	position: relative;
+	overflow: hidden;
+}
+.avatar-uploader .el-upload:hover {
+	border-color: $theme-color;
+}
+.avatar-uploader-icon {
+	font-size: 28px;
+	color: #8c939d;
+	width: 178px;
+	height: 178px;
+	line-height: 178px !important;
+	text-align: center;
+}
+.avatar {
+	width: 178px;
+	height: 178px;
+	display: block;
+}
+.el-tag {
+	margin-right: 10px;
+	max-width: 278px;
+	white-space: nowrap;
+    overflow: hidden;
+	text-overflow: ellipsis;
+	vertical-align: bottom;
+}
+.button-new-tag {
+	height: 32px;
+	line-height: 30px;
+	padding-top: 0;
+	padding-bottom: 0;
+	vertical-align: bottom;
+}
+.input-new-tag {
+	width: auto !important;
+	vertical-align: bottom;
+	.el-input__inner {
+		width: 200px  !important;
+	}
+}
+.el-select .el-input {
+	width: 130px;
+}
+.link-text {
+	color: $theme-color;
+	cursor: pointer;
+}
+.dialog-content {
+	.dc-title {
+		color: #666;
+		font-weight: 600;
+		padding-left: 10px;
+		margin-bottom: 10px;
+		border-left: 3px solid $theme-color;
+		&.mt-15 {
+			margin-top: 15px;
+		}
+	}
+	table.info-table {
+		width: 100%;
+		border-top: 1px solid #ebeef5;
+		border-left: 1px solid #ebeef5;
+		margin-bottom: 15px;
+		td {
+			border-right: 1px solid #ebeef5;
+			border-bottom: 1px solid #ebeef5;
+			padding: 8px;
+			font-size: 13px;
+			color: #666;
+			span {
+				color: $theme-color;
+			}
+		}
+	}
+	.info-hd {
+        margin-bottom: 15px;
+        padding-bottom: 5px;
+		span {
+			margin-right: 30px;
+            color: $theme-color;
+            display: inline-block;
+            margin-bottom: 8px;
+            font-size: 13px;
+			&.obvious {
+				color: #e36159;
+			}
+			b {
+				font-weight: normal;
+				color: #999;
+			}
+		}
+	}
+	.reason {
+        margin-bottom: 8px;
+        .el-radio {
+            color: #999;
+            .el-radio__label {
+                font-size: 13px;
+            }
+        }
+	}
+	.el-form {
+		width: 360px;
+	}
+}
+.dialog-footer {
+	text-align: center;
+	position: relative;
+	.el-icon-d-arrow-left,
+	.el-icon-d-arrow-right,
+	.el-icon-delete {
+		margin: 0 10px;
+		color: #2baab1;
+		cursor: pointer;
+	}
+	.el-icon-delete, .btn-right {
+		position: absolute;
+		right: 0px;
+		top: 0px;
+		color: #e36159;
+	}
+	.btn-right {
+		color: #2baab1;
+		font-size: 13px;
+		cursor: pointer;
+	}
+	.name {
+		position: absolute;
+		left: 0px;
+		top: 0px;
+		font-weight: 400;
+		color: #666;
+		font-size: 14px;
+	}
+	.set-top {
+		position: absolute;
+		right: 40px;
+		top: 0px;
+		color: #2baab1;
+		font-size: 14px;
+		cursor: pointer;
+	}
+}
+.el-tooltip__popper{
+	max-width: 60%
+}
+
+.clearfix, .clear {
+    display: inline-table;
+    zoom: 1;
+    display: block;
+}
+* html .clearfix,* html .clear {
+    height: 1%;
+    zoom: 1;
+}
+.clear {
+    clear: both
+}
+.clearfix:after, .clear:after {
+    content: " ";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden;
+    line-height: 0
+}
